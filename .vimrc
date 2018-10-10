@@ -28,9 +28,9 @@ if has('vim_starting')
     call neobundle#end()
 endif
 
-" if neobundle#is_installed('molokai')
-    " colorscheme molokai " カラースキームにmolokaiを設定する
-" endif
+ if neobundle#is_installed('molokai')
+    colorscheme molokai " カラースキームにmolokaiを設定する
+ endif
 
 filetype plugin indent on
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
@@ -39,3 +39,5 @@ set hlsearch
 set wildmenu
 set history=5000
 set number
+set cursorline
+set cursorcolumn
